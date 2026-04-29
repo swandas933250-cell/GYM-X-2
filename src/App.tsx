@@ -129,12 +129,12 @@ const Hero = () => {
 
   return (
     <section className="relative h-[110vh] w-full overflow-hidden flex items-center justify-center">
-      {/* Background with Parallax and Overlay */}
       <motion.div style={{ y: y1, opacity }} className="absolute inset-0 z-0">
         <img 
-          src="/body.jpg" 
+          src="https://lh3.googleusercontent.com/d/13QzywvfWW6kv-0qoOcPXSbR8Md13AmIw" 
           alt="Gym Hero"
           className="w-full h-full object-cover scale-110"
+          referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-linear-to-b from-bg/10 via-bg/40 to-bg" />
         <div className="absolute inset-0 bg-grid opacity-30" />
@@ -264,7 +264,7 @@ const Programs = () => {
       title: "HIIT Core",
       desc: "High-intensity metabolic conditioning designed to melt fat and build endurance.",
       icon: <Play className="w-8 h-8" />,
-      img: "/body.jpg"
+      img: "https://lh3.googleusercontent.com/d/13QzywvfWW6kv-0qoOcPXSbR8Md13AmIw"
     },
     {
       title: "Elite Boxing",

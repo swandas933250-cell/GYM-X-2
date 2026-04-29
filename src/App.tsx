@@ -21,7 +21,6 @@ import {
   Play
 } from "lucide-react";
 import { useState, useEffect, ReactNode } from "react";
-import bodyImage from "./assets/body.jpg";
 
 // --- Components ---
 
@@ -266,7 +265,7 @@ const Programs = () => {
       title: "HIIT Core",
       desc: "High-intensity metabolic conditioning designed to melt fat and build endurance.",
       icon: <Play className="w-8 h-8" />,
-      img: bodyImage
+      img: "/body.jpg"
     },
     {
       title: "Elite Boxing",

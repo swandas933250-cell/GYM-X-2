@@ -21,7 +21,6 @@ import {
   Play
 } from "lucide-react";
 import { useState, useEffect, ReactNode } from "react";
-import bodyImage from "./assets/body.jpg";
 
 // --- Components ---
 
@@ -133,7 +132,7 @@ const Hero = () => {
       {/* Background with Parallax and Overlay */}
       <motion.div style={{ y: y1, opacity }} className="absolute inset-0 z-0">
         <img 
-          src={bodyImage} 
+          src="/body.jpg" 
           alt="Gym Hero"
           className="w-full h-full object-cover scale-110"
         />
@@ -265,7 +264,7 @@ const Programs = () => {
       title: "HIIT Core",
       desc: "High-intensity metabolic conditioning designed to melt fat and build endurance.",
       icon: <Play className="w-8 h-8" />,
-      img: bodyImage
+      img: "/body.jpg"
     },
     {
       title: "Elite Boxing",

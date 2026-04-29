@@ -21,6 +21,7 @@ import {
   Play
 } from "lucide-react";
 import { useState, useEffect, ReactNode } from "react";
+import bodyImage from "./assets/body.jpg";
 
 // --- Components ---
 
@@ -135,7 +136,6 @@ const Hero = () => {
           src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=2069&auto=format&fit=crop" 
           alt="Gym Hero"
           className="w-full h-full object-cover scale-110"
-          referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-linear-to-b from-bg/10 via-bg/40 to-bg" />
         <div className="absolute inset-0 bg-grid opacity-30" />
@@ -265,7 +265,7 @@ const Programs = () => {
       title: "HIIT Core",
       desc: "High-intensity metabolic conditioning designed to melt fat and build endurance.",
       icon: <Play className="w-8 h-8" />,
-      img: "/body.jpg"
+      img: bodyImage
     },
     {
       title: "Elite Boxing",
@@ -291,8 +291,7 @@ const Programs = () => {
             <img 
               src={prog.img} 
               alt={prog.title} 
-              className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
-              referrerPolicy="no-referrer"
+              className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
             />
             <div className="absolute inset-0 bg-linear-to-t from-bg via-bg/40 to-transparent" />
             <div className="absolute inset-0 p-10 flex flex-col justify-end">
